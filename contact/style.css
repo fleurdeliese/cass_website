@@ -1,0 +1,78 @@
+.content {
+    display: left;
+    margin-right: auto;
+     margin-left: 30px;
+     animation: fadeInScale 1s ease;
+}
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.bluesky {
+    display: flex;
+    text-align: center;
+    margin-top: 40px;
+}
+.twitter {
+    display: flex;
+    text-align: center;
+    margin-top: 40px;
+}
+.mail {
+    display: flex;
+    text-align: center;
+    margin-top: 40px;
+}
+.discord {
+    display: flex;
+    text-align: center;
+    margin-top: 40px;
+}
+.ko-fi {
+    display: flex;
+    text-align: center;
+    margin-top: 40px;
+}
+.carrd {
+    display: flex;
+    text-align: center;
+    margin-top: 40px;
+}
+img {
+    display: flex;
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+
+}
+h2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+a {
+    display: contents;
+    align-items: center;
+}
+.content :hover {
+    color: var(--accent);
+
+}
+.content h2 {
+     animation: fadeIn 1s ease;
+    transition: color 0.2s ease;
+    cursor: pointer;
+}
+
+.content h2:hover{
+    color: var(--accent)
+}
+

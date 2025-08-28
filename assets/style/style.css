@@ -1,0 +1,79 @@
+@import url("./nav.css");
+
+@font-face {
+    font-family: 'Torus';
+    src: url("/assets/font/Torus-Regular.otf");
+}
+
+:root {
+    --background: #222831;
+    --background-2: #393e46;
+    --primary: #eee;
+    --accent: #a57ae0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    font-family: 'Torus';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--background);
+    color: var(--primary);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.background {
+    position: fixed;
+    object-fit: cover;
+    top: -10%;
+    left: -10%;
+    width: 120vw;
+    height: 120vh;
+    z-index: -2;
+    opacity: .4;
+    filter: blur(5px);
+}
+
+.content {
+    height: 100%;
+    padding-top: 110px;
+}
+    
+.featured{
+    padding-bottom: 10px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+    animation: fadeInScale 1s ease;
+}
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+ 
+.list{
+    margin-bottom: auto;
+}
